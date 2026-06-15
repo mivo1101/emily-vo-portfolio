@@ -187,6 +187,7 @@ export const workCategories: WorkCategory[] = [
           "Data Storytelling",
         ],
         coverSlug: "tgm-ramadan",
+        coverImage: "/images/projects/tgm-ramadan-cover.png",
         links: [
           {
             label: "Publication",
@@ -208,6 +209,7 @@ export const workCategories: WorkCategory[] = [
           "Consumer Research",
         ],
         coverSlug: "water-wise",
+        coverImage: "/images/projects/water-wise-cover.png",
         links: [
           {
             label: "Publication",
