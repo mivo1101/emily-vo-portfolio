@@ -90,8 +90,13 @@ export const workCategories: WorkCategory[] = [
           "Developed a tourism-focused web platform featuring responsive layouts, navigation systems, and user-friendly travel experiences.",
         tags: ["Web Development", "HTML/CSS", "Front-End", "Tourism"],
         coverSlug: "govietnam",
+        coverImage: "/images/projects/govietnam-cover.png",
         links: [
           { label: "GitHub", href: "https://github.com/mivo1101/GoVietnam" },
+          {
+            label: "Website",
+            href: "https://govietnam.vercel.app/home",
+          },
         ],
       },
       {
@@ -118,6 +123,7 @@ export const workCategories: WorkCategory[] = [
           "Investigated IoT cyberattacks through network traffic analysis, identifying attack patterns and malicious communication behaviours using packet-level evidence.",
         tags: ["Wireshark", "Network Security", "IoT Security", "Traffic Analysis"],
         coverSlug: "iot-cyberattack",
+        coverImage: "/images/projects/iot-cyberattack-cover.png",
         links: [
           {
             label: "Presentation",
@@ -138,6 +144,7 @@ export const workCategories: WorkCategory[] = [
           "Mitigation Planning",
         ],
         coverSlug: "cyber-risk-assessment",
+        coverImage: "/images/projects/cyber-risk-assessment-cover.png",
         links: [
           {
             label: "Presentation",
@@ -153,6 +160,7 @@ export const workCategories: WorkCategory[] = [
           "Analysed volatile memory artefacts to recover evidence of system activity and investigate simulated security incidents.",
         tags: ["Digital Forensics", "Memory Analysis", "Linux", "Investigation"],
         coverSlug: "memory-forensics",
+        coverImage: "/images/projects/memory-forensics-cover.png",
         links: [
           {
             label: "Presentation",
