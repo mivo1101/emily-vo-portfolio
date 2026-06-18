@@ -36,14 +36,14 @@ export const beyondGalleryItems: BeyondGalleryItem[] = [
     image: "/images/beyond/vlog-mirror.png",
     alt: "Vlogging in a mirror selfie",
     description:
-      'I also enjoy vlogging and editing when I have a smooth for. Or maybe just filling up my phone storage with footage I\'ll edit "someday" haha!',
+      'I also enjoy vlogging and editing when I have a mood for. Or maybe just filling up my phone storage with footage I\'ll edit "someday" haha!',
     tileClass: "beyond-tile-vlog",
   },
   {
     id: "basketball",
     image: "/images/beyond/basketball.png",
     alt: "High school basketball game",
-    description: "I was a key player of my high school's basketball team",
+    description: "I was a key player of my high school's basketball team.",
     tileClass: "beyond-tile-basketball",
   },
   {

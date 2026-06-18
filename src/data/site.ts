@@ -15,7 +15,7 @@ export const site = {
     label: "About me",
     paragraphs: [
       "I started in business and spent two years in marketing at VNG and TGM Research, both tech-driven companies. I loved the research, the storytelling, the pace. But I kept noticing the same thing: every good idea eventually ran through technology. That is what pulled me toward tech. So I moved to Australia and started over. I am studying IT at Deakin University in Melbourne and learning fast.",
-      "I will not pretend I have it all figured out yet. What I do have is curiosity, discipline, and a habit of making complex things clear. That helped me in marketing. I think it helps in tech too.",
+      "What I bring is uncommon. I've worked on the business side, so I understand why a product needs to exist and who it's really for. Now I have the technical foundation to help shape and build it, and to translate between the people who set the strategy and the people who write the code. The curiosity, discipline, and habit of making complex things clear that carried me through marketing are exactly what make me effective in tech.",
     ],
     card: {
       name: "Emily Vo",
