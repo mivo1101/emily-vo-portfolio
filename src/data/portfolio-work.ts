@@ -53,6 +53,7 @@ export const workCategories: WorkCategory[] = [
           "Designed and developed an interactive digital invitation platform for creating, personalising, sharing, and managing memorable event experiences.",
         tags: ["Full-Stack Development", "Next.js", "TypeScript", "UX/UI Design"],
         coverSlug: "gather",
+        coverImage: "/images/projects/gather-cover.png",
         links: [
           { label: "GitHub", href: "https://github.com/mivo1101/gather" },
           {
