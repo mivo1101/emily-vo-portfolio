@@ -9,33 +9,36 @@ import {
   Newspaper,
   Presentation,
   Smartphone,
-  type LucideIcon,
 } from "lucide-react";
 import { workCategories, type WorkLink, type WorkProject } from "@/data/portfolio-work";
 import { ProjectCover } from "@/components/ui/ProjectCover";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { GitHubIcon } from "@/components/ui/SocialIcons";
 
-function resolveLinkIcon(label: string, href: string): LucideIcon | "github" {
+function renderLinkIcon(label: string, href: string) {
   const name = label.toLowerCase();
   const url = href.toLowerCase();
+  const iconProps = { className: "h-5 w-5", strokeWidth: 1.75 };
 
-  if (name.includes("github") || url.includes("github.com")) return "github";
-  if (name.includes("report") || url.endsWith(".pdf")) return FileText;
-  if (name.includes("presentation") || url.includes("canva.")) return Presentation;
-  if (name.includes("landing")) return AppWindow;
-  if (name.includes("prototype")) return Smartphone;
-  if (name.includes("website")) return Globe;
-  if (url.includes("figma.com")) return AppWindow;
-  if (name.includes("publication")) return Newspaper;
+  if (name.includes("github") || url.includes("github.com")) {
+    return <GitHubIcon className="h-5 w-5" />;
+  }
+  if (name.includes("report") || url.endsWith(".pdf")) {
+    return <FileText {...iconProps} />;
+  }
+  if (name.includes("presentation") || url.includes("canva.")) {
+    return <Presentation {...iconProps} />;
+  }
+  if (name.includes("landing")) return <AppWindow {...iconProps} />;
+  if (name.includes("prototype")) return <Smartphone {...iconProps} />;
+  if (name.includes("website")) return <Globe {...iconProps} />;
+  if (url.includes("figma.com")) return <AppWindow {...iconProps} />;
+  if (name.includes("publication")) return <Newspaper {...iconProps} />;
 
-  return Globe;
+  return <Globe {...iconProps} />;
 }
 
 function WorkLinkButton({ label, href }: WorkLink) {
-  const icon = resolveLinkIcon(label, href);
-  const Icon = icon === "github" ? null : icon;
-
   return (
     <a
       href={href}
@@ -45,11 +48,7 @@ function WorkLinkButton({ label, href }: WorkLink) {
       title={label}
       className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0F172A] text-white transition-opacity hover:opacity-90"
     >
-      {icon === "github" ? (
-        <GitHubIcon className="h-5 w-5" />
-      ) : (
-        Icon && <Icon className="h-5 w-5" strokeWidth={1.75} />
-      )}
+      {renderLinkIcon(label, href)}
     </a>
   );
 }

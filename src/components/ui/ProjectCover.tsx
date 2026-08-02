@@ -6,6 +6,7 @@ import {
   Flower2,
   Globe2,
   HeartPulse,
+  MailOpen,
   Moon,
   Network,
   ShieldCheck,
@@ -26,6 +27,11 @@ const coverConfig: Record<
     gradient: "from-rose-400 via-pink-500 to-fuchsia-500",
     Icon: HeartPulse,
     pattern: "radial-gradient(circle at 20% 80%, rgba(255,255,255,0.2) 0%, transparent 45%)",
+  },
+  gather: {
+    gradient: "from-[#FF60AA] via-pink-500 to-rose-400",
+    Icon: MailOpen,
+    pattern: "radial-gradient(circle at 75% 25%, rgba(255,255,255,0.24) 0%, transparent 44%)",
   },
   alive: {
     gradient: "from-indigo-600 via-violet-600 to-fuchsia-500",

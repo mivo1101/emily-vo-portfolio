@@ -46,6 +46,22 @@ export const workCategories: WorkCategory[] = [
     label: "Digital Product Development",
     projects: [
       {
+        id: "gather",
+        title: "Gather",
+        year: "2026",
+        description:
+          "Designed and developed an interactive digital invitation platform for creating, personalising, sharing, and managing memorable event experiences.",
+        tags: ["Full-Stack Development", "Next.js", "TypeScript", "UX/UI Design"],
+        coverSlug: "gather",
+        links: [
+          { label: "GitHub", href: "https://github.com/mivo1101/gather" },
+          {
+            label: "Website",
+            href: "https://gather-invitation.vercel.app/",
+          },
+        ],
+      },
+      {
         id: "careio",
         title: "Careio",
         year: "2026",

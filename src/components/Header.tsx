@@ -14,13 +14,10 @@ const navLinks = [
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
-  const [mounted, setMounted] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [hoveredSection, setHoveredSection] = useState<string | null>(null);
 
   useEffect(() => {
-    setMounted(true);
-
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -68,7 +65,7 @@ export function Header() {
     <header
       suppressHydrationWarning
       className={`sticky top-0 z-50 border-b transition-all duration-300 ${
-        mounted && scrolled
+        scrolled
           ? "border-[#E4E4EA] bg-white/95 backdrop-blur-md"
           : "border-transparent bg-white"
       }`}
