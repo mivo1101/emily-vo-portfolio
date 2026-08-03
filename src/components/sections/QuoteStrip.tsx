@@ -3,15 +3,15 @@ import { AuroraBackground } from "@/components/ui/AuroraBackground";
 
 export function QuoteStrip() {
   return (
-    <section className="relative overflow-hidden bg-[#0F172A] px-6 py-10 sm:py-12">
+    <section className="relative overflow-hidden bg-[#0F172A] px-6 py-8 sm:py-10">
       <AuroraBackground />
       <div className="relative z-10 mx-auto max-w-5xl space-y-3 text-center sm:space-y-4">
         {site.quotes.map((line) => (
           <p key={line.quote} className="leading-snug">
-            <span className="text-xl font-normal text-white/90 sm:text-2xl lg:text-[1.75rem]">
+            <span className="text-lg font-normal text-white/90 sm:text-xl lg:text-2xl">
               {line.lead}{" "}
             </span>
-            <span className="text-gradient text-2xl font-bold sm:text-3xl lg:text-[2.125rem]">
+            <span className="text-gradient text-xl font-bold sm:text-[1.625rem] lg:text-[1.875rem]">
               &ldquo;{line.quote}&rdquo;
             </span>
           </p>

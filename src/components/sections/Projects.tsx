@@ -109,10 +109,10 @@ export function Projects() {
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-sm font-medium uppercase tracking-wide text-[#64748B]">
+            <p className="text-xs font-medium uppercase tracking-wide text-[#64748B]">
               Selected work
             </p>
-            <h2 className="mt-4 font-display text-[2rem] font-bold leading-tight tracking-tight text-[#0F172A] sm:text-[2.5rem] lg:text-[2.75rem]">
+            <h2 className="mt-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight text-[#0F172A] sm:text-[2.125rem] lg:text-[2.25rem]">
               Work that <span className="text-gradient">Speaks</span>
             </h2>
           </div>
