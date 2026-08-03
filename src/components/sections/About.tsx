@@ -60,10 +60,10 @@ export function About() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 xl:gap-20">
         <div>
           <ScrollReveal>
-            <p className="text-sm font-medium uppercase tracking-wide text-white">
+            <p className="text-xs font-medium uppercase tracking-wide text-white">
               <span className="text-white/50">|</span> {site.about.label}
             </p>
-            <h2 className="mt-5 font-display text-[2.5rem] font-bold leading-[1.08] tracking-tight sm:text-[2.75rem] lg:text-[3rem]">
+            <h2 className="mt-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight sm:text-[2.125rem] lg:text-[2.25rem]">
               <span className="text-gradient">Why</span>{" "}
               <span className="text-white">Tech?</span>
             </h2>

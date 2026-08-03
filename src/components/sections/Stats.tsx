@@ -73,10 +73,10 @@ export function Stats() {
     <section className="bg-white px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-6xl">
         <div className="text-center">
-          <p className="text-sm font-medium uppercase tracking-wide text-[#64748B]">
+          <p className="text-xs font-medium uppercase tracking-wide text-[#64748B]">
             Overview
           </p>
-          <h2 className="mt-4 font-display text-[2rem] font-bold leading-tight tracking-tight text-[#0F172A] sm:text-[2.5rem] lg:text-[2.75rem]">
+          <h2 className="mt-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight text-[#0F172A] sm:text-[2.125rem] lg:text-[2.25rem]">
             A Quick Read On <span className="text-gradient">My Path</span>
           </h2>
         </div>

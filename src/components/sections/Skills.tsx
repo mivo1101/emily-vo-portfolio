@@ -36,10 +36,10 @@ export function Skills() {
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-sm font-medium uppercase tracking-wide text-[#64748B]">
+            <p className="text-xs font-medium uppercase tracking-wide text-[#64748B]">
               Skills
             </p>
-            <h2 className="mt-4 font-display text-[2rem] font-bold leading-tight tracking-tight text-[#0F172A] sm:text-[2.5rem] lg:text-[2.75rem]">
+            <h2 className="mt-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight text-[#0F172A] sm:text-[2.125rem] lg:text-[2.25rem]">
               My Multidisciplinary{" "}
               <span className="text-gradient">Toolkit</span>
             </h2>
