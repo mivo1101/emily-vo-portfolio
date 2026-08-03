@@ -205,7 +205,7 @@ export function Experience() {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
 
   return (
-    <section id="experience" className="bg-[#FAFAFA] px-6 pt-8 pb-16 min-h-screen sm:pt-10 sm:pb-20 lg:pb-24">
+    <section id="experience" className="bg-[#FAFAFA] px-6 pt-8 pb-16 sm:pt-10 sm:pb-20 lg:pb-24">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <div className="text-center">
