@@ -18,8 +18,26 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://emily-vo-portfolio.vercel.app"),
   title: site.title,
   description: site.description,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName: "Emily Vo Portfolio",
+    title: "Emily Vo, Portfolio",
+    description:
+      "A multidisciplinary portfolio combining business insight, creative thinking, and technical expertise.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Emily Vo, Portfolio",
+    description:
+      "A multidisciplinary portfolio combining business insight, creative thinking, and technical expertise.",
+  },
 };
 
 export default function RootLayout({
