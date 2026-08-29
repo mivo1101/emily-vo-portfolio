@@ -9,7 +9,7 @@ export function Hero() {
     <section className="relative overflow-hidden bg-white px-6 pb-6 pt-5 sm:pt-6">
       <GradientAtmosphere />
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center">
-        <div className="inline-flex items-center rounded-full bg-badge px-5 py-2.5 text-base font-semibold uppercase text-foreground">
+        <div className="inline-flex items-center rounded-full bg-badge px-5 py-2.5 text-[0.875rem] font-semibold uppercase leading-5 text-foreground">
           {site.hero.badge}
         </div>
 

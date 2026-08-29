@@ -22,10 +22,10 @@
   --font-display: var(--font-jakarta);
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.25rem;
-  --text-sm: 1rem;
+  --text-sm: 0.9375rem;
   --text-sm--line-height: 1.5rem;
-  --text-base: 1.125rem;
-  --text-base--line-height: 1.75rem;
+  --text-base: 1rem;
+  --text-base--line-height: 1.625rem;
   --text-lg: 1.25rem;
   --text-lg--line-height: 1.875rem;
 }
@@ -43,8 +43,8 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-roboto), "Roboto", sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.65;
+  font-size: 1rem;
+  line-height: 1.625;
   -webkit-font-smoothing: antialiased;
 }
 
