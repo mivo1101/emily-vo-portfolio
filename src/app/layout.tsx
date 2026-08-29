@@ -28,13 +28,13 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: "Emily Vo Portfolio",
-    title: "Emily Vo, Portfolio",
+    title: "Emily Vo - Portfolio",
     description:
       "A multidisciplinary portfolio combining business insight, creative thinking, and technical expertise.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emily Vo, Portfolio",
+    title: "Emily Vo - Portfolio",
     description:
       "A multidisciplinary portfolio combining business insight, creative thinking, and technical expertise.",
   },
