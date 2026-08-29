@@ -15,6 +15,17 @@ import { ProjectCover } from "@/components/ui/ProjectCover";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { GitHubIcon } from "@/components/ui/SocialIcons";
 
+const featuredProjectIds = ["gather", "careio", "alive"];
+const featuredProjects = featuredProjectIds.flatMap((projectId) =>
+  workCategories.flatMap((category) =>
+    category.projects.filter((project) => project.id === projectId),
+  ),
+);
+const projectViews = [
+  { id: "featured", label: "Featured Work", projects: featuredProjects },
+  ...workCategories,
+];
+
 function renderLinkIcon(label: string, href: string) {
   const name = label.toLowerCase();
   const url = href.toLowerCase();
@@ -99,10 +110,9 @@ function WorkCard({ project }: { project: WorkProject }) {
 }
 
 export function Projects() {
-  const [activeId, setActiveId] = useState(workCategories[0]?.id ?? "business");
-  const activeCategory =
-    workCategories.find((category) => category.id === activeId) ??
-    workCategories[0];
+  const [activeId, setActiveId] = useState("featured");
+  const activeView =
+    projectViews.find((view) => view.id === activeId) ?? projectViews[0];
 
   return (
     <section id="work" className="bg-white px-6 pt-8 pb-12 sm:pt-10 sm:pb-14 lg:pb-16">
@@ -120,21 +130,22 @@ export function Projects() {
 
         <ScrollReveal delay={60}>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-2.5 sm:mt-10 sm:gap-3">
-            {workCategories.map((category) => {
-              const isActive = category.id === activeId;
+            {projectViews.map((view) => {
+              const isActive = view.id === activeId;
 
               return (
                 <button
-                  key={category.id}
+                  key={view.id}
                   type="button"
-                  onClick={() => setActiveId(category.id)}
+                  onClick={() => setActiveId(view.id)}
+                  aria-pressed={isActive}
                   className={`rounded-full px-4 py-2.5 text-sm font-medium transition-colors sm:px-5 ${
                     isActive
                       ? "bg-[#0F172A] text-white"
                       : "border-gradient bg-[#FAFAFA] text-[#0F172A]"
                   }`}
                 >
-                  {category.label}
+                  {view.label}
                 </button>
               );
             })}
@@ -142,11 +153,11 @@ export function Projects() {
         </ScrollReveal>
 
         <div className="mt-8 grid gap-5 sm:mt-10 sm:grid-cols-2 xl:grid-cols-3">
-          {activeCategory.projects.map((project, index) => (
+          {activeView.projects.map((project, index) => (
             <ScrollReveal
               key={project.id}
               delay={index * 50}
-              className={activeCategory.projects.length === 1 ? "sm:max-w-md" : ""}
+              className={activeView.projects.length === 1 ? "sm:max-w-md" : ""}
             >
               <WorkCard project={project} />
             </ScrollReveal>

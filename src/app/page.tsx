@@ -29,12 +29,12 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <Projects />
         <About />
         <Marquee items={marqueeItems} />
         <Stats />
         <Skills />
         <QuoteStrip />
-        <Projects />
         <Experience />
         <Beyond />
         <Contact />

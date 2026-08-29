@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 import { site } from "@/data/site";
 
 const navLinks = [
+  { href: "/#work", label: "Projects", sectionId: "work" },
   { href: "/#about", label: "About", sectionId: "about" },
   { href: "/#skills", label: "Skills", sectionId: "skills" },
-  { href: "/#work", label: "Projects", sectionId: "work" },
   { href: "/#experience", label: "Journey", sectionId: "experience" },
   { href: "/#contact", label: "Contact", sectionId: "contact" },
 ] as const;
@@ -16,6 +17,7 @@ export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string | null>(null);
   const [hoveredSection, setHoveredSection] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -74,6 +76,7 @@ export function Header() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 py-3.5">
           <Link
             href="/"
+            onClick={() => setMobileMenuOpen(false)}
             className="font-display text-lg font-bold text-foreground transition-opacity hover:opacity-80"
           >
             Emily Vo
@@ -114,16 +117,65 @@ export function Header() {
             })}
           </nav>
 
-          <a
-            href={site.contact.cvPath}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-foreground px-5 py-2.5 text-base font-semibold text-white transition-transform hover:scale-[1.02]"
-          >
-            My CV
-          </a>
+          <div className="flex items-center gap-2.5">
+            <a
+              href={site.contact.cvPath}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-foreground px-4 py-2 text-sm font-semibold text-white transition-transform hover:scale-[1.02] sm:px-5 sm:py-2.5 sm:text-base"
+            >
+              My CV
+            </a>
+
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen((open) => !open)}
+              aria-expanded={mobileMenuOpen}
+              aria-controls="mobile-navigation"
+              aria-label={mobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+              className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#E4E4EA] bg-white text-[#0F172A] transition-colors hover:bg-[#F2F2F7] md:hidden"
+            >
+              {mobileMenuOpen ? (
+                <X className="h-5 w-5" strokeWidth={2} />
+              ) : (
+                <Menu className="h-5 w-5" strokeWidth={2} />
+              )}
+            </button>
+          </div>
         </div>
       </div>
+
+      {mobileMenuOpen && (
+        <nav
+          id="mobile-navigation"
+          aria-label="Mobile navigation"
+          className="border-t border-[#E4E4EA] bg-white px-6 pb-5 pt-3 md:hidden"
+        >
+          <div className="mx-auto grid max-w-6xl gap-1">
+            {navLinks.map((link) => {
+              const isActive = activeSection === link.sectionId;
+
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => {
+                    setActiveSection(link.sectionId);
+                    setMobileMenuOpen(false);
+                  }}
+                  className={`rounded-xl px-4 py-3 font-display text-base font-semibold transition-colors ${
+                    isActive
+                      ? "bg-[#F2F2F7] text-[#FE27C1]"
+                      : "text-[#0F172A] hover:bg-[#F8FAFC]"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
+          </div>
+        </nav>
+      )}
     </header>
   );
 }
