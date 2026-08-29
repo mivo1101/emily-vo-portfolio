@@ -62,7 +62,7 @@ function Counter({ value, suffix = "", label, staticValue = false }: CounterProp
 }
 
 const stats = [
-  { value: 2, suffix: "", label: "Majors · Business & IT", staticValue: true },
+  { value: 2, suffix: "", label: "Degrees · Business & IT", staticValue: true },
   { value: 5, suffix: "+", label: "High Distinction IT projects" },
   { value: 2, suffix: "", label: "Countries · Vietnam & Australia" },
   { value: 2026, suffix: "", label: "Deakin MIT graduation", staticValue: true },
