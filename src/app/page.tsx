@@ -30,12 +30,12 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Projects />
-        <About />
         <Marquee items={marqueeItems} />
         <Stats />
         <Skills />
         <QuoteStrip />
         <Experience />
+        <About />
         <Beyond />
         <Contact />
       </main>

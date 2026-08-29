@@ -7,9 +7,9 @@ import { site } from "@/data/site";
 
 const navLinks = [
   { href: "/#work", label: "Projects", sectionId: "work" },
-  { href: "/#about", label: "About", sectionId: "about" },
   { href: "/#skills", label: "Skills", sectionId: "skills" },
   { href: "/#experience", label: "Journey", sectionId: "experience" },
+  { href: "/#about", label: "About", sectionId: "about" },
   { href: "/#contact", label: "Contact", sectionId: "contact" },
 ] as const;
 
