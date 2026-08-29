@@ -39,6 +39,20 @@ export const skillCategories: SkillCategory[] = [
     label: "Programming Languages",
     skills: [
       {
+        name: "TypeScript",
+        proficiency: "Foundational",
+        description:
+          "Built responsive React interfaces and reusable components for Gather, including authentication, editor, dashboard, and preview flows.",
+        icon: Code2,
+      },
+      {
+        name: "JavaScript",
+        proficiency: "Foundational",
+        description:
+          "Developed interactive web experiences and integrated REST APIs, JSON data, and dynamic content across full-stack projects.",
+        icon: Braces,
+      },
+      {
         name: "HTML/CSS",
         proficiency: "Foundational",
         description:
