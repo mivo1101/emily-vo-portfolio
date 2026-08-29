@@ -66,7 +66,7 @@ function WorkLinkButton({ label, href }: WorkLink) {
 
 function WorkCard({ project }: { project: WorkProject }) {
   return (
-    <article className="interactive-card relative flex h-full flex-col overflow-hidden rounded-2xl bg-[#F2F2F7] hover:z-10 hover:shadow-[0_20px_44px_-24px_rgba(15,23,42,0.28)]">
+    <article className="interactive-card relative flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-[0_16px_40px_-24px_rgba(0,0,0,0.55)] hover:z-10 hover:shadow-[0_24px_54px_-24px_rgba(0,0,0,0.7)]">
       {project.coverImage ? (
         <div className="relative h-44 w-full shrink-0 overflow-hidden sm:h-48">
           <Image
@@ -115,14 +115,14 @@ export function Projects() {
     projectViews.find((view) => view.id === activeId) ?? projectViews[0];
 
   return (
-    <section id="work" className="bg-white px-6 pt-8 pb-12 sm:pt-10 sm:pb-14 lg:pb-16">
+    <section id="work" className="bg-[#0F172A] px-6 pt-8 pb-12 sm:pt-10 sm:pb-14 lg:pb-16">
       <div className="mx-auto max-w-6xl">
         <ScrollReveal>
           <div className="text-center">
-            <p className="text-xs font-medium uppercase tracking-wide text-[#64748B]">
+            <p className="text-xs font-medium uppercase tracking-wide text-white/60">
               Selected work
             </p>
-            <h2 className="mt-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight text-[#0F172A] sm:text-[2.125rem] lg:text-[2.25rem]">
+            <h2 className="mt-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight text-white sm:text-[2.125rem] lg:text-[2.25rem]">
               Work that <span className="text-gradient">Speaks</span>
             </h2>
           </div>
@@ -141,8 +141,8 @@ export function Projects() {
                   aria-pressed={isActive}
                   className={`rounded-full px-4 py-2.5 text-sm font-medium transition-colors sm:px-5 ${
                     isActive
-                      ? "bg-[#0F172A] text-white"
-                      : "border-gradient bg-[#FAFAFA] text-[#0F172A]"
+                      ? "bg-white text-[#0F172A]"
+                      : "border border-white/25 bg-white/[0.06] text-white hover:bg-white/[0.12]"
                   }`}
                 >
                   {view.label}

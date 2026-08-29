@@ -56,21 +56,21 @@ function AboutCard() {
 
 export function About() {
   return (
-    <section id="about" className="bg-[#0F172A] px-6 pt-8 pb-16 sm:pt-10 sm:pb-20 lg:pb-24">
+    <section id="about" className="bg-white px-6 pt-8 pb-16 sm:pt-10 sm:pb-20 lg:pb-24">
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[minmax(0,1fr)_auto] lg:gap-16 xl:gap-20">
         <div>
           <ScrollReveal>
-            <p className="text-xs font-medium uppercase tracking-wide text-white">
-              <span className="text-white/50">|</span> {site.about.label}
+            <p className="text-xs font-medium uppercase tracking-wide text-[#64748B]">
+              <span className="text-[#CBD5E1]">|</span> {site.about.label}
             </p>
             <h2 className="mt-3 font-display text-[1.75rem] font-bold leading-tight tracking-tight sm:text-[2.125rem] lg:text-[2.25rem]">
               <span className="text-gradient">Why</span>{" "}
-              <span className="text-white">Tech?</span>
+              <span className="text-[#0F172A]">Tech?</span>
             </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={80}>
-            <div className="mt-6 space-y-5 text-base leading-[1.75] text-white/90 sm:mt-7 sm:text-[1.0625rem] sm:leading-[1.8]">
+            <div className="mt-6 space-y-5 text-base leading-[1.75] text-[#475569] sm:mt-7 sm:text-[1.0625rem] sm:leading-[1.8]">
               {site.about.paragraphs.map((paragraph) => (
                 <p key={paragraph.slice(0, 24)}>{paragraph}</p>
               ))}
