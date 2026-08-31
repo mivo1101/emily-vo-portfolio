@@ -70,14 +70,14 @@ export const skillCategories: SkillCategory[] = [
         name: "SQL",
         proficiency: "Foundational",
         description:
-          "Query and manage relational databases, including data retrieval, filtering, and aggregation.",
+          "Queried and managed relational databases, including data retrieval, filtering, and aggregation.",
         icon: Database,
       },
       {
         name: "Python",
         proficiency: "Foundational",
         description:
-          "Develop and evaluate machine learning models, alongside automation and data analysis in cybersecurity projects.",
+          "Developed and evaluated machine learning models, alongside automation and data analysis in cybersecurity projects.",
         icon: Braces,
       },
     ],
@@ -97,7 +97,7 @@ export const skillCategories: SkillCategory[] = [
         name: "VirtualBox",
         proficiency: "Foundational",
         description:
-          "Deployed virtual machines and isolated test environments for operating system, networking, and security exercises.",
+          "Deployed virtual machines and isolated test environments for operating systems, networking, and security exercises.",
         icon: Box,
       },
       {

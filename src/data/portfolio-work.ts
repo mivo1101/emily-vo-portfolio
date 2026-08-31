@@ -77,7 +77,7 @@ export const workCategories: WorkCategory[] = [
             href: "https://www.figma.com/proto/W869SPdjRsYC7ExbTVZr8s/Careio?node-id=1-2&t=2oMjfgT1ff9sV3mq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
           },
           {
-            label: "High-fi Prototype",
+            label: "High-fidelity Prototype",
             href: "https://www.figma.com/proto/W869SPdjRsYC7ExbTVZr8s/Careio?node-id=68-33&p=f&t=fkQFPLlQQqJD8COO-1&scaling=scale-down&content-scaling=fixed&page-id=20%3A32&starting-point-node-id=68%3A33&show-proto-sidebar=1",
           },
         ],
@@ -217,7 +217,7 @@ export const workCategories: WorkCategory[] = [
         title: "Water Wise: Shaping Sustainable Cities",
         year: "2024",
         description:
-          "Collaborated on developing content and research-driven insights exploring sustainability challenges and public attitudes towards urban water management.",
+          "Collaborated on the development of content and research-driven insights exploring sustainability challenges and public attitudes towards urban water management.",
         tags: [
           "Research Insights",
           "Sustainability",

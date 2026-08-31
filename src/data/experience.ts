@@ -38,10 +38,10 @@ export const milestones: Milestone[] = [
         items: ["GPA (100 scale): 83.857 (Updating)"],
       },
       {
-        items: ["Support Deakin InnoFes 2025 as a Crew Member"],
+        items: ["Supported Deakin InnoFest 2025 as a crew member"],
       },
       {
-        title: "Achived High HD Grade in Units - HD Projects:",
+        title: "Achieved High Distinction grades in these units:",
         items: [
           "Research and Development in Information Technology: 98",
           "Database Fundamentals: 95 (Machine Learning in Data Management)",
@@ -67,7 +67,7 @@ export const milestones: Milestone[] = [
         items: [
           "Prepared weekly social content (LinkedIn, Facebook, Instagram, TikTok) and website content (articles, case studies, press releases, and essential company and employee updates).",
           "Updated website content using Joomla and Elfsight, and EDM using Stripo.",
-          "Designed assets (infographics, videos, banners) using Canva and Capcut.",
+          "Designed assets (infographics, videos, banners) using Canva and CapCut.",
           "Prepared periodical reports (company's LinkedIn performance, campaign performance, industry research, and competitors' performance analysis).",
           "Led TGMstories (employer branding project about TGM's people), Mother's Day 2024 (internal campaign), and Ramadan Insights 2024 (global project across Indonesia, Egypt, the UAE, and Saudi Arabia).",
         ],
@@ -95,10 +95,10 @@ export const milestones: Milestone[] = [
       {
         title: "Extra-curricular activities:",
         items: [
-          "Completed the ISB Leadership Program, and the Critical Thinking Skill Course of Thinking School.",
+          "Completed the ISB Leadership Program and Thinking School's Critical Thinking Skills course.",
           "Supported the ISB Gavel Club for the English Speaking Contest Gala Finals and Team Building.",
-          "Achieved the 'Top 6 best-performed team' award in Marketing Competition 2021 - Colorful Minds.",
-          "Initiated the idea of the Suntan Lotion Paper Vending Machine in the L'Oréal Brandstorm's competition.",
+          "Achieved a Top 6 team award in the Colorful Minds Marketing Competition 2021.",
+          "Developed the idea for a suntan lotion paper vending machine for the L'Oréal Brandstorm competition.",
           "Became an Ambassador of iVolunteer Vietnam 2021.",
         ],
       },
@@ -116,8 +116,8 @@ export const milestones: Milestone[] = [
     sections: [
       {
         items: [
-          "Supported Marketing activities for a sports activity tracker application.",
-          "In charge of internal updates, including documentation revamp, Marketing plan, application's new version updates.",
+          "Supported marketing activities for a sports activity tracker application.",
+          "Managed internal updates, including documentation improvements, the marketing plan, and communications about new application versions.",
           "Planned promotional launches, including video scripts, agency coordination, translation, web content, and assets.",
         ],
       },
@@ -125,7 +125,7 @@ export const milestones: Milestone[] = [
         title: "Marketing Fresher - NFT Team",
         subtitle: "VNG Level Up Fresher Program 2022",
         items: [
-          "Researched on Blockchain and NFT trends, and initiated a Marketing plan for the NFT Platform.",
+          "Researched blockchain and NFT trends and developed a marketing plan for the NFT platform.",
         ],
       },
     ],

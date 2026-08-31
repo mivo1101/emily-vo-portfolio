@@ -88,7 +88,7 @@ export function Contact() {
               </span>
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-[#64748B] sm:text-base">
-              Open to IT opportunities. Based in Melbourne, happy to connect from Vietnam too.
+              {contact.openTo}
             </p>
           </div>
         </ScrollReveal>

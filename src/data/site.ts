@@ -35,7 +35,8 @@ export const site = {
     email: "emilyvo.work@gmail.com",
     phone: "(+61) 479 083 827",
     location: "Melbourne, VIC 3000",
-    openTo: "Open to IT opportunities. Based in Melbourne, happy to connect from Vietnam too.",
+    openTo:
+      "Open to IT opportunities. Based in Melbourne and happy to connect with people in Vietnam too.",
     linkedin: "https://www.linkedin.com/in/mi-vo-chau-tra/",
     github: "https://github.com/mivo1101",
     cvPath: "/cv.pdf",
